@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.electriccloud;singleton:=true
+Bundle-Name: ElectricFlow
+Bundle-Version: 1.0.1
+Bundle-ClassPath: .,lib/commons-codec-1.9.jar,lib/commons-logging-1.2.
+ jar,lib/httpclient-4.5.jar,lib/httpcore-4.4.1.jar
+Require-Bundle: com.dynatrace.diagnostics.sdk
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Electric Cloud
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by Dynatrace Client 6.5.0 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="com.electriccloud" name="ElectricFlow">
+    <information>
+      <category value="" />
+      <displayname value="Call ElectricFlow API" />
+      <description value="Make a call to your ElectricFlow server." />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="endpoint" label="ElectricFlow API Endpoint" type="string" description="API endpoint, e.g. https://my-server:443" default="" multiline="false" />
+      <property key="username" label="ElectricFlow Username" type="string" description="Username for authorization" default="" multiline="false" />
+      <property key="password" label="ElectricFlow password" type="password" description="Password for authorization" default="" />
+      <property key="actionUrl" label="Action URL" type="string" description="URL of API action, e.g. 'pipelines'" default="" multiline="false" />
+      <property key="method" label="Method" type="string" description="Request method, e.g. POST" default="POST" multiline="false" />
+      <property key="parameters" label="Parameters" type="string" description="Parameters for API call, in key = value pairs, e.g. projectName = Default" default="projectName=Default" multiline="true" />
+      <property key="body" label="Body" type="string" description="Request body" default="" multiline="true" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="com.electriccloud.action" name="ElectricFlowAPIAction">
+    <plugin configid="com.electriccloud" class="com.electriccloud.apiaction.FlowAPIAction" />
+  </extension>
+</plugin>
