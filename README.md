@@ -15,7 +15,9 @@ Key feature of integration includes:
 
 # Installation
 
-Import the plugin into the Dynatrace Server. Refer to Dynatrace documentation for more details.
+In order to install ElectricFlow Action plugin, import the plugin jar file into the Dynatrace Server. Refer to Dynatrace documentation for more details.
+
+To install Dynatrace plugin on ElectricFlow system, please go to [Dynatrace - Electric Cloud](https://electric-cloud.com/plugins/directory/p/dynatrace) for further information.
 
 
 # Configuration
